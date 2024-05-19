@@ -1,5 +1,11 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
+import { globSync } from 'glob';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { ViteEjsPlugin } from 'vite-plugin-ejs';
+
+import liveReload from 'vite-plugin-live-reload';
 
 function moveOutputPlugin() {
   return {
@@ -18,18 +24,27 @@ function moveOutputPlugin() {
 }
 
 export default defineConfig({
+  base: '/2024_hex_personal_website/',
   server: {
     // 啟動 server 時預設開啟的頁面
-    open: './index.html',
+    open: './pages/index.html',
   },
+  plugins: [
+    liveReload(['./layout/**/*.ejs', './pages/**/*.ejs', './pages/**/*.html']),
+    ViteEjsPlugin(),
+    moveOutputPlugin(),
+  ],
   build: {
     rollupOptions: {
-      input: {
-        index: resolve(__dirname, './index.html'),
-      },
-      output: {
-        index: './index.html',
-      },
+      input: Object.fromEntries(
+        globSync('./pages/**/*.html').map((file) => [
+          path.relative(
+            'pages',
+            file.slice(0, file.length - path.extname(file).length)
+          ),
+          fileURLToPath(new URL(file, import.meta.url)),
+        ])
+      ),
     },
     outDir: resolve(__dirname, './dist'),
   },
