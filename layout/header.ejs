@@ -1,48 +1,101 @@
-<header class="sticky bg-white top-0 border-b border-gray py-2 z-50  md:py-7">
-  <div class="container flex justify-between items-center relative md:justify-center ">
+<header class="l-header sticky h-14 bg-white top-0 border-b border-primary-200 z-50 md:h-auto">
+  <div class="px-3 py-2 md:container flex justify-between items-center relative md:py-7 md:justify-center">
     <a href="./index.html"
       class="w-[74px] h-[33px]  indent-[101%] whitespace-nowrap overflow-hidden md:w-[90px] md:md:h-[40px] md:left-0 md:top-1/2 md:absolute md:-translate-y-1/2"
       style="background-image: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/logo.svg');">
       Neal
     </a>
-    <nav class="hidden md:block">
-      <ul class="flex gap-10">
-        <li>
-          <a href="#" class="relative px-2 py-1">
-            首頁
-            <span class="absolute top-0 left-0 w-2 h-2 border-t border-l border-gray-5">&nbsp;</span>
-            <span class="absolute top-0 right-0 w-2 h-2 border-t border-r border-gray-5">&nbsp;</span>
-            <span class="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-gray-5">&nbsp;</span>
-            <span class="absolute bottom-0 left-0 w-2 h-2 border-b border-l border-gray-5">&nbsp;</span>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="px-2 py-1">
-            作品集
-          </a>
-        </li>
-        <li>
-          <a href="#" class="px-2 py-1">
-            服務項目
-          </a>
-        </li>
-        <li>
-          <a href="#" class="px-2 py-1">
-            部落格
-          </a>
-        </li>
-        <li>
-          <a href="#" class="px-2 py-1">
-            聯絡我
-          </a>
-        </li>
-      </ul>
+    <nav class="absolute w-full top-full left-0 md:block md:static md:w-auto">
+      <div data-id="menu-content"
+        class="relative grid grid-rows-0 overflow-hidden opacity-0 transition-opacity duration-500 md:opacity-100 md:grid-rows-1">
+        <div class="h-[calc(100dvh-56px)] bg-black/70 md:h-auto">
+          <ul
+            class="relative bg-white flex  flex-col items-center text-xl/normal sm:text-base py-10 gap-6 md:gap-10 md:py-0 md:flex-row">
+            <li>
+              <a href="../pages/index.html"
+                class="inline-block relative px-2 py-1 group <%= activePage === 'index' ? 'active' : '' %>">
+                首頁
+                <span
+                  class="absolute top-0 left-0 w-2 h-2 border-t border-l border-primary-500 opacity-0 transition-all duration-300 group-hover:opacity-100">&nbsp;</span>
+                <span
+                  class="absolute top-0 right-0 w-2 h-2 border-t border-r border-primary-500 opacity-0 transition-all duration-300 group-hover:opacity-100">&nbsp;</span>
+                <span
+                  class="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-primary-500 opacity-0 transition-all duration-300 group-hover:opacity-100">&nbsp;</span>
+                <span
+                  class="absolute bottom-0 left-0 w-2 h-2 border-b border-l border-primary-500 opacity-0 transition-all duration-300 group-hover:opacity-100">&nbsp;</span>
+              </a>
+            </li>
+            <li>
+              <a href="../pages/portfolio.html"
+                class="inline-block relative px-2 py-1 group <%= activePage === 'portfolio' ? 'active' : '' %>">
+                作品集
+                <span
+                  class="absolute top-0 left-0 w-2 h-2 border-t border-l border-primary-500 opacity-0 transition-all duration-300 group-hover:opacity-100">&nbsp;</span>
+                <span
+                  class="absolute top-0 right-0 w-2 h-2 border-t border-r border-primary-500 opacity-0 transition-all duration-300 group-hover:opacity-100">&nbsp;</span>
+                <span
+                  class="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-primary-500 opacity-0 transition-all duration-300 group-hover:opacity-100">&nbsp;</span>
+                <span
+                  class="absolute bottom-0 left-0 w-2 h-2 border-b border-l border-primary-500 opacity-0 transition-all duration-300 group-hover:opacity-100">&nbsp;</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class=" inline-block relative px-2 py-1 group">
+                服務項目
+                <span
+                  class="absolute top-0 left-0 w-2 h-2 border-t border-l border-primary-500 opacity-0 transition-all duration-300 group-hover:opacity-100">&nbsp;</span>
+                <span
+                  class="absolute top-0 right-0 w-2 h-2 border-t border-r border-primary-500 opacity-0 transition-all duration-300 group-hover:opacity-100">&nbsp;</span>
+                <span
+                  class="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-primary-500 opacity-0 transition-all duration-300 group-hover:opacity-100">&nbsp;</span>
+                <span
+                  class="absolute bottom-0 left-0 w-2 h-2 border-b border-l border-primary-500 opacity-0 transition-all duration-300 group-hover:opacity-100">&nbsp;</span>
+              </a>
+              </a>
+
+            </li>
+            <li>
+              <a href="#" class="inline-block relative px-2 py-1 group">
+                部落格
+                <span
+                  class="absolute top-0 left-0 w-2 h-2 border-t border-l border-primary-500 opacity-0 transition-all duration-300 group-hover:opacity-100">&nbsp;</span>
+                <span
+                  class="absolute top-0 right-0 w-2 h-2 border-t border-r border-primary-500 opacity-0 transition-all duration-300 group-hover:opacity-100">&nbsp;</span>
+                <span
+                  class="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-primary-500 opacity-0 transition-all duration-300 group-hover:opacity-100">&nbsp;</span>
+                <span
+                  class="absolute bottom-0 left-0 w-2 h-2 border-b border-l border-primary-500 opacity-0 transition-all duration-300 group-hover:opacity-100">&nbsp;</span>
+              </a>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="inline-block relative px-2 py-1 group">
+                聯絡我
+                <span
+                  class="absolute top-0 left-0 w-2 h-2 border-t border-l border-primary-500 opacity-0 transition-all duration-300 group-hover:opacity-100">&nbsp;</span>
+                <span
+                  class="absolute top-0 right-0 w-2 h-2 border-t border-r border-primary-500 opacity-0 transition-all duration-300 group-hover:opacity-100">&nbsp;</span>
+                <span
+                  class="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-primary-500 opacity-0 transition-all duration-300 group-hover:opacity-100">&nbsp;</span>
+                <span
+                  class="absolute bottom-0 left-0 w-2 h-2 border-b border-l border-primary-500 opacity-0 transition-all duration-300 group-hover:opacity-100">&nbsp;</span>
+              </a>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
-    <button type="button" class="block md:hidden">
-      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black" class="bi bi-list"
-        viewBox="0 0 16 16">
+    <button data-id="menu-btn" type="button" class="relative block w-10 h-10 md:hidden">
+      <svg class="absolute top-0 left-0" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black"
+        class="bi bi-list" viewBox="0 0 16 16">
         <path fill-rule="evenodd"
           d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+      </svg>
+      <svg class="opacity-0 top-0 left-0" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        class="bi bi-x-lg" viewBox="0 0 16 16">
+        <path
+          d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
       </svg>
     </button>
   </div>

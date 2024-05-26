@@ -1,3 +1,13 @@
 .l-footer {
   background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true');
 }
+.l-header {
+  nav {
+    .active {
+      font-weight: 700;
+      span {
+        opacity: 1;
+      }
+    }
+  }
+}

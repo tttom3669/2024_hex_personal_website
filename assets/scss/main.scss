@@ -13,5 +13,11 @@
   }
 }
 
+@layer utilities {
+  .stretched-link {
+    @apply before:absolute before:content-['']  before:top-0 before:bottom-0 before:right-0 before:left-0;
+  }
+}
+
 @import './_pages.scss';
 @import './layouts';

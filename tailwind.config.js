@@ -20,17 +20,27 @@ export default {
     extend: {
       colors: {
         gray: {
-          DEFAULT: '#F1F1F1',
-          1: '#3B3B3B',
-          2: '#5B5B5B',
-          3: '#C1C1C1',
-          4: '#272727',
-          5: '#919191',
-          6: '#1E1E1E',
+          1: '#272727',
+        },
+        primary: {
+          100: '#FAFAFA',
+          200: '#F1F1F1',
+          300: '#E9E9E9',
+          400: '#C1C1C1',
+          500: '#919191',
+          600: '#5B5B5B',
+          700: '#3B3B3B',
+          800: '#1E1E1E',
         },
       },
       lineHeight: {
         tight: '1.2',
+      },
+      gridTemplateRows: {
+        0: 'repeat(1, minmax(0, 0fr))',
+      },
+      zIndex: {
+        60: 60,
       },
     },
   },
