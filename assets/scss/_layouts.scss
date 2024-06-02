@@ -1,5 +1,9 @@
 .l-footer {
-  background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true');
+  background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-sm.png?raw=true');
+
+  @media (min-width: 576px) {
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true');
+  }
 }
 .l-header {
   nav {

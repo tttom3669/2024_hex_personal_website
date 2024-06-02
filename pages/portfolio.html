@@ -11,292 +11,280 @@
 
 <body>
   <%- include('./layout/header',{activePage: 'portfolio' }); -%>
+    <main>
+      <!-- banner -->
+      <section class="bg-primary-100 pt-10 pb-20 md:py-20">
+        <div class="container">
+          <div class="flex justify-center mb-10 md:mb-6">
+            <h2
+              class="relative text-xl/tight  flex flex-col justify-center items-center text-center sm:text-2xl/tight md:text-start md:px-[71px] md:py-[59px]">
+              <span class="mb-2 md:mb-0">
+                讓使用者在觀賞與使用的旅程中，發現
+                <strong class="relative">
+                  設計的價值
+                  <img class="absolute bottom-0 left-0"
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/mark.png?raw=true"
+                    alt="mark">
+                </strong>
+              </span>
+              <span>
+                而我在設計與開發的過程中，看見
+                <strong class="relative">
+                  自己的價值
+                  <img class="absolute bottom-0 left-0"
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/mark.png?raw=true"
+                    alt="mark">
+                </strong>
+              </span>
 
-    <section class="bg-primary-100 pt-10 pb-20 md:py-20">
-      <div class="container">
-        <div class="flex justify-center mb-10 md:mb-6">
-          <h2
-            class="relative text-xl/tight  flex flex-col justify-center items-center text-center sm:text-2xl/tight md:text-start md:px-[71px] md:py-[59px]">
-            <span class="mb-2 md:mb-0">
-              讓使用者在觀賞與使用的旅程中，發現
-              <strong class="relative">
-                設計的價值
-                <img class="absolute bottom-0 left-0"
-                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/mark.png?raw=true"
-                  alt="mark">
-              </strong>
-            </span>
-            <span>
-              而我在設計與開發的過程中，看見
-              <strong class="relative">
-                自己的價值
-                <img class="absolute bottom-0 left-0"
-                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/mark.png?raw=true"
-                  alt="mark">
-              </strong>
-            </span>
-
-            <img class="top-0 left-0 order-first md:absolute"
-              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/quote-left.png?raw=true"
-              alt="quote-left">
-            <img class="hidden absolute bottom-0 right-0 md:block"
-              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/quote-right.png?raw=true"
-              alt="quote-right">
-          </h2>
-        </div>
-        <div class="grid grid-cols-12 gap-x-6">
-          <div class="col-span-12 md:col-span-6 md:col-start-4">
-            <ul class="flex flex-col gap-5 justify-between md:flex-row md:gap-10">
-              <li class="flex flex-col items-center gap-2 text-base">
-                <h3
-                  class="relative text-primary-600 pb-1 before:content-[''] before:absolute before:bottom-0 before:left-1/2 before:-translate-x-1/2 before:w-6 before:h-0.5 before:bg-primary-400">
-                  2B經驗</h3>
-                <p class="text-primary-700 text-center">內部監控系統、庫存系統、採購系統、行銷整合系統</p>
-              </li>
-              <li class="flex flex-col items-center gap-2 text-base">
-                <h3
-                  class="relative text-primary-600  pb-1 before:content-[''] before:absolute before:bottom-0 before:left-1/2 before:-translate-x-1/2 before:w-6 before:h-0.5 before:bg-primary-400">
-                  2C經驗</h3>
-                <p class="text-primary-700 text-center">跨國美妝保養電商、個人品牌網站、醫美網站、電子商務</p>
-              </li>
-            </ul>
+              <img class="top-0 left-0 order-first md:absolute"
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/quote-left.png?raw=true"
+                alt="quote-left">
+              <img class="hidden absolute bottom-0 right-0 md:block"
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/quote-right.png?raw=true"
+                alt="quote-right">
+            </h2>
           </div>
+          <div class="grid grid-cols-12 gap-x-6">
+            <div class="col-span-12 md:col-span-6 md:col-start-4">
+              <ul class="flex flex-col gap-5 justify-between text-primary-700 md:flex-row md:gap-10">
+                <li class="flex flex-col items-center gap-2 text-base">
+                  <h3
+                    class="relative text-primary-600 pb-1 before:content-[''] before:absolute before:bottom-0 before:left-1/2 before:-translate-x-1/2 before:w-6 before:h-0.5 before:bg-primary-400">
+                    2B經驗</h3>
+                  <p class=" text-center">內部監控系統、庫存系統、採購系統、行銷整合系統</p>
+                </li>
+                <li class="flex flex-col items-center gap-2 text-base">
+                  <h3
+                    class="relative text-primary-600  pb-1 before:content-[''] before:absolute before:bottom-0 before:left-1/2 before:-translate-x-1/2 before:w-6 before:h-0.5 before:bg-primary-400">
+                    2C經驗</h3>
+                  <p class=" text-center">跨國美妝保養電商、個人品牌網站、醫美網站、電子商務</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- card-list -->
+      <section class="py-20 md:py-[120px]">
+        <div class="container">
+          <ul class="grid grid-cols-1  gap-x-6 gap-y-12 md:gap-y-20 mb-12 md:mb-[72px] md:grid-cols-2">
+            <li>
+              <article class="relative">
+                <img class="w-full h-auto object-cover border border-primary-100 rounded-lg"
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/work-image1.png?raw=true"
+                  alt="work-image">
+                <div class="px-4 pt-4 text-primary-700">
+                  <h2 class="text-xl/tight font-bold mb-2 sm:text-[28px]/tight">
+                    <a data-id="modal-link" class="stretched-link" href="#">星際旅行訂票平台</a>
+                  </h2>
+                  <p class="text-primary-500 mb-4 md:mb-6">悠遊宇宙的夢想，從這裡開始實現</p>
+                  <ul class="flex gap-4">
+                    <li class="bg-primary-200 rounded-2xl"><a class="inline-block py-1 px-3" href="#">網頁設計</a></li>
+                    <li class="bg-primary-200 rounded-2xl"><a class="inline-block py-1 px-3" href="#">響應式設計</a></li>
+                    <li class="bg-primary-200 rounded-2xl"><a class="inline-block py-1 px-3" href="#">Bootstrap</a>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="relative">
+                <img class="w-full h-auto object-cover border border-primary-100 rounded-lg"
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/work-image2.png?raw=true"
+                  alt="work-image">
+                <div class="px-4 pt-4 text-primary-700">
+                  <h2 class="text-xl/tight  font-bold mb-2 sm:text-[28px]/tight"><a class="stretched-link"
+                      href="#">理財App</a></h2>
+                  <p class="text-primary-500 mb-4 md:mb-6">連動帳戶與行動支付，讓 AI 提供您最好的理財建議</p>
+                  <ul class="flex gap-4">
+                    <li class="bg-primary-200 rounded-2xl"><a class="inline-block py-1 px-3" href="#">APP設計</a></li>
+                    <li class="bg-primary-200 rounded-2xl"><a class="inline-block py-1 px-3" href="#">iOS</a>
+                    </li>
+                    <li class="bg-primary-200 rounded-2xl"><a class="inline-block py-1 px-3" href="#">React</a>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="relative">
+                <img class="w-full h-auto object-cover border border-primary-100 rounded-lg"
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/work-image3.png?raw=true"
+                  alt="work-image">
+                <div class="px-4 pt-4 text-primary-700">
+                  <h2 class="text-xl/tight  font-bold mb-2 sm:text-[28px]/tight"><a class="stretched-link"
+                      href="#">醫美診所官網</a></h2>
+                  <p class="text-primary-500 mb-4 md:mb-6">永保青春的秘密，從粹究開始</p>
+                  <ul class="flex gap-4">
+                    <li class="bg-primary-200 rounded-2xl"><a class="inline-block py-1 px-3" href="#">網頁設計</a></li>
+                    <li class="bg-primary-200 rounded-2xl"><a class="inline-block py-1 px-3" href="#">響應式設計</a>
+                    </li>
+                    <li class="bg-primary-200 rounded-2xl"><a class="inline-block py-1 px-3" href="#">ＷordPress</a>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="relative">
+                <img class="w-full h-auto object-cover border border-primary-100 rounded-lg"
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/work-image4.png?raw=true"
+                  alt="work-image">
+                <div class="px-4 pt-4 text-primary-700">
+                  <h2 class="text-xl/tight  font-bold mb-2 sm:text-[28px]/tight"><a class="stretched-link"
+                      href="#">美美美早餐店
+                      POS 機 UI
+                      Design</a></h2>
+                  <p class="text-primary-500 mb-4 md:mb-6">訂單送單一目瞭然，自動報表分析好輕鬆</p>
+                  <ul class="flex gap-4">
+                    <li class="bg-primary-200 rounded-2xl"><a class="inline-block py-1 px-3" href="#">UI
+                        設計</a></li>
+                    <li class="bg-primary-200 rounded-2xl"><a class="inline-block py-1 px-3" href="#">前端開發</a>
+                    </li>
+                    <li class="bg-primary-200 rounded-2xl"><a class="inline-block py-1 px-3" href="#">Wix</a>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="relative">
+                <img class="w-full h-auto object-cover border border-primary-100 rounded-lg"
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/work-image5.png?raw=true"
+                  alt="work-image">
+                <div class="px-4 pt-4 text-primary-700">
+                  <h2 class="text-xl/tight  font-bold mb-2 sm:text-[28px]/tight"><a class="stretched-link"
+                      href="#">電影院訂票系統</a></h2>
+                  <p class="text-primary-500 mb-4 md:mb-6">三步驟完成訂票，電腦手機都支援</p>
+                  <ul class="flex gap-4">
+                    <li class="bg-primary-200 rounded-2xl"><a class="inline-block py-1 px-3" href="#">前端開發</a></li>
+                    <li class="bg-primary-200 rounded-2xl"><a class="inline-block py-1 px-3" href="#">後端支援</a>
+                    </li>
+                    <li class="bg-primary-200 rounded-2xl"><a class="inline-block py-1 px-3" href="#">Vue</a>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="relative">
+                <img class="w-full h-auto object-cover border border-primary-100 rounded-lg"
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/work-image6.png?raw=true"
+                  alt="work-image">
+                <div class="px-4 pt-4 text-primary-700">
+                  <h2 class="text-xl/tight  font-bold mb-2 sm:text-[28px]/tight"><a class="stretched-link"
+                      href="#">巧克巧克形象官網設計</a></h2>
+                  <p class="text-primary-500 mb-4 md:mb-6">三步驟完成訂票，電腦手機都支援</p>
+                  <ul class="flex gap-4">
+                    <li class="bg-primary-200 rounded-2xl"><a class="inline-block py-1 px-3" href="#">UI設計</a></li>
+                    <li class="bg-primary-200 rounded-2xl"><a class="inline-block py-1 px-3" href="#">設計系統</a>
+                    </li>
+                    <li class="bg-primary-200 rounded-2xl"><a class="inline-block py-1 px-3" href="#">網路電商</a>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <ul class="text-2xl/normal flex justify-center gap-4 text-primary-700">
+            <li>
+              <a class="flex justify-center items-center w-10 h-10 text-white bg-primary-800 rounded" href="#">1</a>
+            </li>
+            <li>
+              <a class="flex justify-center items-center w-10 h-10 rounded transition-all duration-300 hover:text-white hover:bg-primary-800"
+                href="#">2</a>
+            </li>
+            <li>
+              <a class="flex justify-center items-center w-10 h-10 rounded transition-all duration-300 hover:text-white hover:bg-primary-800"
+                href="#">3</a>
+            </li>
+          </ul>
         </div>
 
-      </div>
-    </section>
-
-    <section class="py-20 md:py-[120px]">
-      <div class="container">
-        <ul class="grid grid-cols-1  gap-x-6 gap-y-12 md:gap-y-20 mb-12 md:mb-[72px] md:grid-cols-2">
-          <li class="relative">
-            <article>
-              <img class="w-full h-auto object-cover border border-primary-100 rounded-lg mb-4"
-                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/work-image1.png?raw=true"
-                alt="work-image">
-              <div class="pl-4">
-                <h2 class="text-xl/tight font-bold mb-2 sm:text-[28px]/tight">
-                  <a data-id="modal-link" class="text-primary-700 stretched-link" href="#">星際旅行訂票平台</a>
-                </h2>
-                <p class="text-primary-500 mb-4 md:mb-6">悠遊宇宙的夢想，從這裡開始實現</p>
-                <ul class="flex gap-4">
-                  <li class="bg-primary-200 rounded-2xl"><a class="text-primary-700 inline-block py-1 px-3"
-                      href="#">網頁設計</a></li>
-                  <li class="bg-primary-200 rounded-2xl"><a class="text-primary-700 inline-block py-1 px-3"
-                      href="#">響應式設計</a></li>
-                  <li class="bg-primary-200 rounded-2xl"><a class="text-primary-700 inline-block py-1 px-3"
-                      href="#">Bootstrap</a>
-                  </li>
-                </ul>
-              </div>
-            </article>
-          </li>
-          <li class="relative">
-            <article>
-              <img class="w-full h-auto object-cover border border-primary-100 rounded-lg mb-4"
-                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/work-image2.png?raw=true"
-                alt="work-image">
-              <div class="pl-4">
-                <h2 class="text-xl/tight  font-bold mb-2 sm:text-[28px]/tight"><a
-                    class="text-primary-700 stretched-link" href="#">理財App</a></h2>
-                <p class="text-primary-500 mb-4 md:mb-6">連動帳戶與行動支付，讓 AI 提供您最好的理財建議</p>
-                <ul class="flex gap-4">
-                  <li class="bg-primary-200 rounded-2xl"><a class="text-primary-700 inline-block py-1 px-3"
-                      href="#">APP設計</a></li>
-                  <li class="bg-primary-200 rounded-2xl"><a class="text-primary-700 inline-block py-1 px-3"
-                      href="#">iOS</a>
-                  </li>
-                  <li class="bg-primary-200 rounded-2xl"><a class="text-primary-700 inline-block py-1 px-3"
-                      href="#">React</a>
-                  </li>
-                </ul>
-              </div>
-            </article>
-          </li>
-          <li class="relative">
-            <article>
-              <img class="w-full h-auto object-cover border border-primary-100 rounded-lg mb-4"
-                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/work-image3.png?raw=true"
-                alt="work-image">
-              <div class="pl-4">
-                <h2 class="text-xl/tight  font-bold mb-2 sm:text-[28px]/tight"><a
-                    class="text-primary-700 stretched-link" href="#">醫美診所官網</a></h2>
-                <p class="text-primary-500 mb-4 md:mb-6">永保青春的秘密，從粹究開始</p>
-                <ul class="flex gap-4">
-                  <li class="bg-primary-200 rounded-2xl"><a class="text-primary-700 inline-block py-1 px-3"
-                      href="#">網頁設計</a></li>
-                  <li class="bg-primary-200 rounded-2xl"><a class="text-primary-700 inline-block py-1 px-3"
-                      href="#">響應式設計</a>
-                  </li>
-                  <li class="bg-primary-200 rounded-2xl"><a class="text-primary-700 inline-block py-1 px-3"
-                      href="#">ＷordPress</a>
-                  </li>
-                </ul>
-              </div>
-            </article>
-          </li>
-          <li class="relative">
-            <article>
-              <img class="w-full h-auto object-cover border border-primary-100 rounded-lg mb-4"
-                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/work-image4.png?raw=true"
-                alt="work-image">
-              <div class="pl-4">
-                <h2 class="text-xl/tight  font-bold mb-2 sm:text-[28px]/tight"><a
-                    class="text-primary-700 stretched-link" href="#">美美美早餐店
-                    POS 機 UI
-                    Design</a></h2>
-                <p class="text-primary-500 mb-4 md:mb-6">訂單送單一目瞭然，自動報表分析好輕鬆</p>
-                <ul class="flex gap-4">
-                  <li class="bg-primary-200 rounded-2xl"><a class="text-primary-700 inline-block py-1 px-3" href="#">UI
-                      設計</a></li>
-                  <li class="bg-primary-200 rounded-2xl"><a class="text-primary-700 inline-block py-1 px-3"
-                      href="#">前端開發</a>
-                  </li>
-                  <li class="bg-primary-200 rounded-2xl"><a class="text-primary-700 inline-block py-1 px-3"
-                      href="#">Wix</a>
-                  </li>
-                </ul>
-              </div>
-            </article>
-          </li>
-          <li class="relative">
-            <article>
-              <img class="w-full h-auto object-cover border border-primary-100 rounded-lg mb-4"
-                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/work-image5.png?raw=true"
-                alt="work-image">
-              <div class="pl-4">
-                <h2 class="text-xl/tight  font-bold mb-2 sm:text-[28px]/tight"><a
-                    class="text-primary-700 stretched-link" href="#">電影院訂票系統</a></h2>
-                <p class="text-primary-500 mb-4 md:mb-6">三步驟完成訂票，電腦手機都支援</p>
-                <ul class="flex gap-4">
-                  <li class="bg-primary-200 rounded-2xl"><a class="text-primary-700 inline-block py-1 px-3"
-                      href="#">前端開發</a></li>
-                  <li class="bg-primary-200 rounded-2xl"><a class="text-primary-700 inline-block py-1 px-3"
-                      href="#">後端支援</a>
-                  </li>
-                  <li class="bg-primary-200 rounded-2xl"><a class="text-primary-700 inline-block py-1 px-3"
-                      href="#">Vue</a>
-                  </li>
-                </ul>
-              </div>
-            </article>
-          </li>
-          <li class="relative">
-            <article>
-              <img class="w-full h-auto object-cover border border-primary-100 rounded-lg mb-4"
-                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/work-image6.png?raw=true"
-                alt="work-image">
-              <div class="pl-4">
-                <h2 class="text-xl/tight  font-bold mb-2 sm:text-[28px]/tight"><a
-                    class="text-primary-700 stretched-link" href="#">巧克巧克形象官網設計</a></h2>
-                <p class="text-primary-500 mb-4 md:mb-6">三步驟完成訂票，電腦手機都支援</p>
-                <ul class="flex gap-4">
-                  <li class="bg-primary-200 rounded-2xl"><a class="text-primary-700 inline-block py-1 px-3"
-                      href="#">UI設計</a></li>
-                  <li class="bg-primary-200 rounded-2xl"><a class="text-primary-700 inline-block py-1 px-3"
-                      href="#">設計系統</a>
-                  </li>
-                  <li class="bg-primary-200 rounded-2xl"><a class="text-primary-700 inline-block py-1 px-3"
-                      href="#">網路電商</a>
-                  </li>
-                </ul>
-              </div>
-            </article>
-          </li>
-        </ul>
-        <ul class="text-2xl/normal flex justify-center gap-4 text-primary-700">
-          <li>
-            <a class="flex justify-center items-center w-10 h-10 text-white bg-primary-800 rounded" href="#">1</a>
-          </li>
-          <li>
-            <a class="flex justify-center items-center w-10 h-10 rounded transition-all duration-300 hover:text-white hover:bg-primary-800"
-              href="#">2</a>
-          </li>
-          <li>
-            <a class="flex justify-center items-center w-10 h-10 rounded transition-all duration-300 hover:text-white hover:bg-primary-800"
-              href="#">3</a>
-          </li>
-        </ul>
-      </div>
-
-    </section>
+      </section>
 
 
-    <div data-id="modal" class="fixed top-0 left-0 w-dvw h-0 bg-black/60 z-60 overflow-y-auto">
-      <div class="container">
-        <div class="grid grid-cols-12 gap-x-6">
-          <div class="col-span-12 md:col-span-10 md:col-start-2">
-            <div data-id="modal-content"
-              class="bg-white rounded-2xl overflow-hidden mt-[68px] mb-10 md:my-10 opacity-0 translate-y-1/2 duration-500 transition-all">
-              <div class="flex flex-col">
-                <header class="flex justify-end pt-8 pr-8 md:pr-10">
-                  <button data-id="modal-close" type="button">
-                    <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                      class="bi bi-x-lg" viewBox="0 0 16 16">
-                      <path
-                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
-                    </svg>
-                  </button>
-                </header>
-                <div class="flex-1 py-6 md:py-10">
-                  <div class="text-center mb-6 md:mb-10">
-                    <h2 class="text-[28px]/tight text-primary-700 font-bold mb-2">
-                      星際旅行訂票平台
-                    </h2>
-                    <p class="text-base text-primary-500 ">悠遊宇宙的夢想，從這裡開始實現</p>
-                  </div>
-                  <div
-                    class="flex flex-col items-center text-base px-8 text-primary-600 justify-center md:flex-row md:px-0">
-                    <p class=" text-primary-800 pb-6 md:w-[56.1%] md:pr-[72px] md:pb-0">STAR TRAVEL 為 KK
-                      公司宇宙旅行的購票網站。<br />
-                      主要從地球出發，目的地包含月球、火星、水星、木星；未來太空轉運站建置完畢，將再擴增目的地土星和金星。</p>
+      <!-- Modal -->
+      <div data-id="modal" class="fixed top-0 left-0 w-dvw h-0 bg-black/60 z-60 overflow-y-auto">
+        <div class="container">
+          <div class="grid grid-cols-12 gap-x-6">
+            <div class="col-span-12 md:col-span-10 md:col-start-2">
+              <div data-id="modal-content"
+                class="bg-white rounded-2xl overflow-hidden mt-[68px] mb-10 md:my-10 opacity-0 translate-y-1/2 duration-500 transition-all">
+                <div class="flex flex-col">
+                  <header class="flex justify-end pt-8 pr-8 md:pr-10">
+                    <button data-id="modal-close" type="button">
+                      <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path
+                          d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                      </svg>
+                    </button>
+                  </header>
+                  <div class="flex-1 py-6 md:py-10">
+                    <div class="text-center mb-6 md:mb-10">
+                      <h2 class="text-[28px]/tight text-primary-700 font-bold mb-2">
+                        星際旅行訂票平台
+                      </h2>
+                      <p class="text-base text-primary-500 ">悠遊宇宙的夢想，從這裡開始實現</p>
+                    </div>
                     <div
-                      class="border-t pt-6 border-primary-400 md:pl-6 md:pt-0 md:border-t-0 md:border-l md:w-[33.6%]">
-                      <p class="mb-2 flex flex-col items-center text-center md:text-start  md:items-start xl:flex-row">
-                        <span class="flex">
-                          設計原則
-                          <span class="hidden md:inline">：</span>
-                        </span>
-                        <span>宇宙旅行、深色背景、強烈視覺效果</span>
-                      </p>
-                      <p class="flex flex-col items-center text-center md:text-start  md:items-start xl:flex-row">
-                        <span class="flex">
-                          開發方式
-                          <span class="hidden md:inline">：</span>
-                        </span>
-                        <span>Bootstrap、Javascript、RWD</span>
-                      </p>
+                      class="flex flex-col items-center text-base px-8 text-primary-600 justify-center md:flex-row md:px-0">
+                      <p class=" text-primary-800 pb-6 md:w-[56.1%] md:pr-[72px] md:pb-0">STAR TRAVEL 為 KK
+                        公司宇宙旅行的購票網站。<br />
+                        主要從地球出發，目的地包含月球、火星、水星、木星；未來太空轉運站建置完畢，將再擴增目的地土星和金星。</p>
+                      <div
+                        class="border-t pt-6 border-primary-400 md:pl-6 md:pt-0 md:border-t-0 md:border-l md:w-[33.6%]">
+                        <p
+                          class="mb-2 flex flex-col items-center text-center md:text-start  md:items-start xl:flex-row">
+                          <span class="flex">
+                            設計原則
+                            <span class="hidden md:inline">：</span>
+                          </span>
+                          <span>宇宙旅行、深色背景、強烈視覺效果</span>
+                        </p>
+                        <p class="flex flex-col items-center text-center md:text-start  md:items-start xl:flex-row">
+                          <span class="flex">
+                            開發方式
+                            <span class="hidden md:inline">：</span>
+                          </span>
+                          <span>Bootstrap、Javascript、RWD</span>
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="bg-primary-100 flex flex-col items-center py-10  gap-14 md:py-20">
-                  <figure class="px-4 md:px-0">
-                    <img class="rounded-lg mb-6 md:rounded-[20px]"
-                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/modal-image1.png?raw=true"
-                      alt="modal-image1">
-                    <figcaption class="text-center text-base text-primary-600">
-                      <h3 class="mb-4 text-xl/tight font-bold text-primary-800 sm:text-2xl/tight ">主視覺</h3>
-                      <p>可直接設定日期、起迄星球、張數，快速查詢可購買的票券。</p>
-                    </figcaption>
-                  </figure>
+                  <div class="bg-primary-100 flex flex-col items-center py-10  gap-14 md:py-20">
+                    <figure class="px-4 md:px-0">
+                      <img class="rounded-lg mb-6 md:rounded-[20px]"
+                        src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/modal-image1.png?raw=true"
+                        alt="modal-image1">
+                      <figcaption class="text-center text-base text-primary-600">
+                        <h3 class="mb-4 text-xl/tight font-bold text-primary-800 sm:text-2xl/tight ">主視覺</h3>
+                        <p>可直接設定日期、起迄星球、張數，快速查詢可購買的票券。</p>
+                      </figcaption>
+                    </figure>
 
-                  <figure class="px-4 md:px-0">
-                    <img class="rounded-lg  mb-6 md:rounded-[20px]"
-                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/modal-image2.png?raw=true"
-                      alt="modal-image2">
-                    <figcaption class="text-center text-base text-primary-600">
-                      <h3 class="mb-4 text-xl/tight font-bold text-primary-800  sm:text-2xl/tight ">推薦查詢</h3>
-                      <p>給予最快起飛，以及最熱門的景點推薦，協助使用者進行選擇。</p>
-                    </figcaption>
-                  </figure>
+                    <figure class="px-4 md:px-0">
+                      <img class="rounded-lg  mb-6 md:rounded-[20px]"
+                        src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/modal-image2.png?raw=true"
+                        alt="modal-image2">
+                      <figcaption class="text-center text-base text-primary-600">
+                        <h3 class="mb-4 text-xl/tight font-bold text-primary-800  sm:text-2xl/tight ">推薦查詢</h3>
+                        <p>給予最快起飛，以及最熱門的景點推薦，協助使用者進行選擇。</p>
+                      </figcaption>
+                    </figure>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
+    </main>
     <%- include('./layout/footer'); -%>
       <script type="module" src="../vite.entry.js"></script>
 </body>

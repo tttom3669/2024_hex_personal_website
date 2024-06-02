@@ -4,9 +4,10 @@ function menuCollapseHandler() {
   const menuBtn = document.querySelector(`[data-id="menu-btn"]`);
   const menuContent = document.querySelector(`[data-id="menu-content"]`);
   menuBtn.addEventListener('click', () => {
-    menuContent.classList.toggle('grid-rows-0');
-    menuContent.classList.toggle('grid-rows-1');
+    menuContent.classList.toggle('invisible');
+    menuContent.classList.toggle('pointer-events-none');
     menuContent.classList.toggle('opacity-0');
+    menuContent.parentElement.classList.toggle('pointer-events-none');
   });
 }
 

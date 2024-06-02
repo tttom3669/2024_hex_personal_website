@@ -15,7 +15,7 @@ export default {
       sm: '576px',
       md: '768px',
       lg: '992px',
-      xl: '1024px',
+      xl: '1200px',
     },
     extend: {
       colors: {
@@ -41,6 +41,12 @@ export default {
       },
       zIndex: {
         60: 60,
+      },
+      fontFamily: {
+        tourney: ['"Tourney"', 'sans-serif'],
+      },
+      boxShadow: {
+        'price-list': '0px 4px 8px 0px #00000014',
       },
     },
   },

@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Noto Sans', 'Noto Sans TC', sans-serif;
+    color: black;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+}
+
+@layer utilities {
+  .stretched-link {
+    @apply before:absolute before:content-['']  before:top-0 before:bottom-0 before:right-0 before:left-0;
+  }
+}

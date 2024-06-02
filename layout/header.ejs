@@ -5,14 +5,15 @@
       style="background-image: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/logo.svg');">
       Neal
     </a>
-    <nav class="absolute w-full top-full left-0 md:block md:static md:w-auto">
+    <nav
+      class="absolute w-full top-full left-0 pointer-events-none  md:block md:static md:w-auto md:pointer-events-auto">
       <div data-id="menu-content"
-        class="relative grid grid-rows-0 overflow-hidden opacity-0 transition-opacity duration-500 md:opacity-100 md:grid-rows-1">
+        class="relative grid grid-rows-1 invisible pointer-events-none opacity-0 transition-all duration-500 md:opacity-100 md:visible md:pointer-events-auto">
         <div class="h-[calc(100dvh-56px)] bg-black/70 md:h-auto">
           <ul
             class="relative bg-white flex  flex-col items-center text-xl/normal sm:text-base py-10 gap-6 md:gap-10 md:py-0 md:flex-row">
             <li>
-              <a href="../pages/index.html"
+              <a href="./index.html"
                 class="inline-block relative px-2 py-1 group <%= activePage === 'index' ? 'active' : '' %>">
                 首頁
                 <span
@@ -26,7 +27,7 @@
               </a>
             </li>
             <li>
-              <a href="../pages/portfolio.html"
+              <a href="./portfolio.html"
                 class="inline-block relative px-2 py-1 group <%= activePage === 'portfolio' ? 'active' : '' %>">
                 作品集
                 <span
@@ -40,7 +41,8 @@
               </a>
             </li>
             <li>
-              <a href="#" class=" inline-block relative px-2 py-1 group">
+              <a href="./service.html"
+                class="nline-block relative px-2 py-1 group <%= activePage === 'service' ? 'active' : '' %>">
                 服務項目
                 <span
                   class="absolute top-0 left-0 w-2 h-2 border-t border-l border-primary-500 opacity-0 transition-all duration-300 group-hover:opacity-100">&nbsp;</span>
